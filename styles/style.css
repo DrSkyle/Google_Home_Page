@@ -8,55 +8,268 @@
   -webkit-box-sizing: border-box;
 }
 
+
 /*  */
 a {
-  text-decoration: none;
-  color: black;
-  font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    color: black;
+  }
+  
+  body{
+      font-family: "Roboto", sans-serif;
+  
+  }
+  
+  /* 
+      *Creating the Buttons
+  */
+  .button{
+      outline: 1px solid rgb(212, 205, 205);
+      padding: .5em 1em;
+  
+  }
+  
+  /*  */
+  
+  /* 
+      !  Top Bar
+    */
+  
+  header {
+    width: 100%;
+    position: fixed;
+  }
+  
+  .nav-bar {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 1em;
+  }
+  
+  .nav-link {
+    font-size: 0.85em;
+    padding: 0.5em;
+  }
+  
+  .padding-right {
+    margin-right: 4em;
+  }
+  .nav-link:hover {
+    text-decoration: underline gray;
+  }
+  
+  .nav-image--apps {
+    width: 1.5em;
+    position: absolute;
+    right: 65px;
+    top: 15px;
+  }
+ 
+  
+  .nav-image--profile {
+    position: absolute;
+    width: 2.4em;
+    height: 2.4em;
+    border-radius: 50%;
+    right: 15px;
+    top: 10px;
+  }
+  
+  
+  /* 
+      !Main Content
+  */
+  
+  .main-content{
+      width: 100%;
+    
+  }
+  
+  .image-container{
+      position: relative;
+      top: 10em;
+      text-align: center;
+  
+  }
+  
+  #google-logo{
+      width: 272px;
+      height: 92px;
+  }
+  
+  .search-form{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      position: relative;
+      top: 12em;
+      align-items: center;
+  }
+  
+  .search-bar{
+      display: flex;
+      flex-direction: row;
+  }
+  
+  .search-image{
+      position: relative;
+      bottom:16px;
+      left: 33px;
+      width: 25px;
+      cursor: pointer;
+  }
+
+  .mic-image{
+    position: relative;
+    right: 35px;
+    top: 5px;
+      width: 25px;
+      height:30px;
+      cursor: pointer;
+  }
+
+  
+  
+  .search-box{
+      outline: none;
+      padding: .4em;
+      width: 45vw;
+      height: 45px;
+      margin-bottom: 2.5em;
+      padding: 1.3em 3em;
+      border:1px solid #ccc;
+      border-radius: 25px;
+  }
+
+  .divider{
+    height: 25px;
+    position: relative;
+    right: 35px;
+    color: rgb(255, 255, 255);
 }
+  
+  /* 
+  
+  */
+  @media screen and (max-width:800px) {
+      .search-box{
+          width: 70vw;
+          
+          height: 30px;
+          margin-bottom: 2em ;
+          
+      }
+  
+      #google-logo{
+          width: 176px;
+          height: 56px;
+  
+      }
+  
+      .search-image{
+          width: 15px;
+          bottom: 14px;
+          left:25px;
+  
+      }
 
-/*  */
+      .mic-image{
+        width: -65px;
+        
 
-/* 
-    !  Top Bar
+        
+      }
+      .button{
+          padding-right: 2em .5em;
+      }
+  }
+  
+     
+  
+      @media screen and (max-width:500px) {
+      .search-box{
+          width: 90vw;
+      }
+      .buttons > a{
+          font-size: .5em;
+      
+      }
+      }
+  
+  
+  
+  
+  /* 
+  
+  */
+  .search-box:focus{
+      box-shadow: 2px 2px 10px #ccc;
+  }
+  
+  .search-box:hover{
+      box-shadow: 2px 2px 10px #ccc;
+  
+  }
+  
+  
+  .buttons > a{
+      margin-right: 1em;
+      margin-left: 1em;
+      font-size: .8em;
+      
+      
+  
+  }
+  
+  .buttons >a:hover{
+      outline: 1px solid #ccc;
+  }
+  
+  .search-button{
+      padding-right: 2em;
+      padding-left: 2em;
+      border: 1px solid transparent;
+      outline: none;
+      border-radius: 5px;
+      color: #555;
+      background-color: rgb(248, 245, 245);
+
+  
+  }
+  
+  .lucky-button{
+      color: #555;
+      background-color: rgb(248, 245, 245);
+      border-radius: 5px;
+      border: 1px solid transparent;
+      outline: none;
+  }
+  
+
+
+  /* 
+    !Footer
   */
 
-header {
-  width: 100%;
-  position: fixed;
-}
+  .footer-bar{
+      position: absolute;
+      bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #f2f2f2;
+      height: 5em;
+      width: 100%;
+  }
+  
 
-.nav-bar {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin: 1em;
-}
+  @media  screen and (max-width:450px) {
+      
+      .footer-bar{
+          flex-direction: column;
+      }
+       
+  }
 
-.nav-link {
-  font-size: 0.85em;
-  padding: 0.5em;
-}
 
-.padding-right {
-  margin-right: 4em;
-}
-.nav-link:hover {
-  text-decoration: underline gray;
-}
-
-.nav-image--apps {
-  width: 2.2em;
-  position: absolute;
-  right: 65px;
-  top: 15px;
-}
-
-.nav-image--profile {
-  position: absolute;
-  width: 2.4em;
-  height: 2.4em;
-  border-radius: 50%;
-  right: 15px;
-  top: 10px;
-}
