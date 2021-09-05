@@ -110,7 +110,7 @@ header {
   bottom: 16px;
   left: 33px;
   width: 25px;
-  cursor: pointer;
+  cursor: initial;
 }
 
 .mic-image {
