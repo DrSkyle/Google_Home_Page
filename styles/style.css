@@ -49,8 +49,25 @@ header {
   padding: 0.5em;
 }
 
+.nav-link-round {
+display: flex;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  bottom: 26px;
+  margin-inline: 1em;
+  left: 6.95em;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.nav-link-round:hover {
+  background-color: #f7f3f3;
+}
+
 .padding-right {
-  margin-right: 4em;
+  margin-right: 5.5em;
 }
 .nav-link:hover {
   text-decoration: underline gray;
@@ -58,9 +75,9 @@ header {
 
 .nav-image--apps {
   width: 1.5em;
-  position: absolute;
-  right: 65px;
-  top: 15px;
+  position: relative;
+  display: inline;
+
 }
 
 .nav-image--profile {
