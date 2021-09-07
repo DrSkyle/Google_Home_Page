@@ -103,22 +103,20 @@ header {
 .search-bar {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 .search-image {
   position: relative;
   bottom: 16px;
   left: 33px;
-  width: 25px;
   cursor: initial;
 }
 
 .mic-image {
   position: relative;
   right: 35px;
-  top: 5px;
-  width: 25px;
-  height: 30px;
+  margin-bottom: 34px;
   cursor: pointer;
 }
 
@@ -157,9 +155,8 @@ header {
   }
 
   .search-image {
-    width: 15px;
     bottom: 14px;
-    left: 25px;
+    
   }
 
   .mic-image {
@@ -241,7 +238,7 @@ header {
 
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width:550px) {
   .footer-bar {
     flex-direction: column;
   }
